@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Afrobeats Takeover Story Component</title>
+    <style>
+        :root {
+            --surface-hex: #0F1B14;
+            --glass-backdrop: rgba(26, 46, 31, 0.45);
+            --neon-gold: #D4A017;
+            --neon-emerald: #4CDF8A;
+            --white-high: #FFFFFF;
+            --white-mid: #E2E8F0;
+            --white-low: #94A3B8;
+        }
+
+        body {
+            background-color: var(--surface-hex);
+            background-image: 
+                radial-gradient(circle at 30% 20%, rgba(76, 223, 138, 0.08) 0%, transparent 40%),
+                radial-gradient(circle at 80% 70%, rgba(212, 160, 23, 0.06) 0%, transparent 40%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 1.5rem;
+            box-sizing: border-box;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* High-Craft Glassmorphism Container Matrix */
+        .glass-card-node {
+            background: var(--glass-backdrop);
+            backdrop-filter: blur(20px) saturate(140%);
+            -webkit-backdrop-filter: blur(20px) saturate(140%);
+            border: 1px solid rgba(255, 255, 255, 0.07);
+            border-radius: 16px;
+            padding: 3rem 2.5rem;
+            max-width: 410px;
+            width: 100%;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 
+                0 30px 60px rgba(0, 0, 0, 0.5),
+                inset 0 1px 0 rgba(255, 255, 255, 0.1);
+            box-sizing: border-box;
+            transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1), 
+                        box-shadow 0.5s ease, 
+                        border-color 0.5s ease;
+        }
+
+        /* Interactive Dynamic Border Glow Accentuation */
+        .glass-card-node:hover {
+            transform: translateY(-10px) scale(1.01);
+            border-color: rgba(212, 160, 23, 0.35);
+            box-shadow: 
+                0 40px 80px rgba(0, 0, 0, 0.7),
+                0 0 40px rgba(212, 160, 23, 0.12);
+        }
+
+        /* Decorative Inner Light Flare Context */
+        .glass-card-node::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle at 50% 0%, rgba(255,255,255,0.03), transparent 50%);
+            pointer-events: none;
+            transition: transform 0.5s ease;
+        }
+
+        .glass-card-node:hover::before {
+            transform: translateY(20px);
+        }
+
+        /* Micro-Cap Badge Structure */
+        .card-category-badge {
+            font-variant: small-caps;
+            font-size: 0.75rem;
+            font-weight: 800;
+            letter-spacing: 0.2em;
+            color: var(--neon-emerald);
+            background: rgba(76, 223, 138, 0.08);
+            border: 1px solid rgba(76, 223, 138, 0.2);
+            padding: 0.4rem 0.95rem;
+            border-radius: 6px;
+            display: inline-block;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+        }
+
+        /* Editorial Display Header Typography */
+        .card-editorial-title {
+            font-family: 'Georgia', Garamond, serif;
+            font-size: 2.35rem;
+            font-weight: 800;
+            color: var(--white-high);
+            margin: 0 0 0.5rem 0;
+            line-height: 1.15;
+            letter-spacing: -0.01em;
+        }
+
+        /* Visual Focal Metric Dimension */
+        .card-hero-metric {
+            font-size: 4.25rem;
+            font-weight: 900;
+            color: var(--neon-gold);
+            margin: 0;
+            line-height: 1;
+            letter-spacing: -0.03em;
+            text-shadow: 0 4px 12px rgba(0,0,0,0.3);
+        }
+
+        /* Abstract Micro Linear Rule Separator */
+        .card-divider-line {
+            height: 2px;
+            background: linear-gradient(90deg, var(--neon-gold) 0%, rgba(212, 160, 23, 0.05) 100%);
+            border: none;
+            margin: 1.5rem 0;
+        }
+
+        /* Highly Legible Content Narrative Container */
+        .card-narrative-paragraph {
+            color: var(--white-mid);
+            font-size: 1.05rem;
+            line-height: 1.7;
+            margin: 0 0 2.5rem 0;
+            font-weight: 400;
+        }
+
+        /* Dynamic Anchor Call-To-Action Vector Integration */
+        .story-action-link {
+            color: var(--neon-gold);
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 0.95rem;
+            display: inline-flex;
+            align-items: center;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            transition: color 0.3s ease;
+        }
+
+        .story-action-link::after {
+            content: ' →';
+            display: inline-block;
+            margin-left: 0.45rem;
+            font-weight: 900;
+            transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .story-action-link:hover {
+            color: var(--white-high);
+        }
+
+        .story-action-link:hover::after {
+            transform: translateX(6px) scale(1.1);
+        }
+    </style>
+</head>
+<body>
+
+    <article class="glass-card-node">
+        <span class="card-category-badge">INDUSTRY SCALE</span>
+        <h2 class="card-editorial-title">The Afrobeats Takeover</h2>
+        <div class="card-hero-metric">$2.1B</div>
+        <hr class="card-divider-line">
+        <p class="card-narrative-paragraph">
+            How a genre born in Lagos became the world's fastest-growing sound—told through six years of streaming data.
+        </p>
+        <a href="#" class="story-action-link" aria-label="Explore the complete Afrobeats analytical narrative mapping tool">Read the story</a>
+    </article>
+
+</body>
+</html>
