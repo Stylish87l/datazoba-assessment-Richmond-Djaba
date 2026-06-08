@@ -8,6 +8,13 @@
 
 ---
 
+## 🔗 Live Deployments
+
+* **Task 1 (Svelte Data Visualization):** [https://datazoba-assessment-richmond-djaba.vercel.app/](https://datazoba-assessment-richmond-djaba.vercel.app/)
+* **Task 2 (UI/Feature Implementation):** [https://stylish87l.github.io/datazoba-assessment-Richmond-Djaba/task-2/](https://stylish87l.github.io/datazoba-assessment-Richmond-Djaba/task-2/)
+
+---
+
 ## Repository Structure
 
 ```
