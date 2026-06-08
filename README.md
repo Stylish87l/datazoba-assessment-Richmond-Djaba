@@ -1,8 +1,8 @@
 # DataZoba Frontend Engineering Fellowship — Technical Assessment
 
-**Candidate:** [Your Name]
+**Candidate:** [Richmond Twumasi Djaba]
 **Repository:** `datazoba-assessment-Richmond Djaba`
-**Submitted:** [Submission Date]
+**Submitted:** 8/06/26
 
 ---
 
