@@ -2,7 +2,7 @@
 
 **Candidate:** Richmond Twumasi Djaba
 
-**Repository:** `datazoba-assessment-Richmond Djaba`
+**Repository:** `datazoba-assessment-Richmond-Djaba`
 
 **Submitted:** 8/06/26
 
