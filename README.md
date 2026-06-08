@@ -1,6 +1,6 @@
 # DataZoba Frontend Engineering Fellowship — Technical Assessment
 
-**Candidate:** [Richmond Twumasi Djaba]
+**Candidate:** Richmond Twumasi Djaba
 **Repository:** `datazoba-assessment-Richmond Djaba`
 **Submitted:** 8/06/26
 
@@ -159,5 +159,5 @@ Two observations — noting data issues is itself a valuable skill:
 
 ---
 
-*DataZoba Technical Assessment — Submitted by [Your Name]*
+*DataZoba Technical Assessment — Submitted by Richmond Twumasi Djaba*
 *Contact: [richmond.djaba.dev@gmail.com]*
